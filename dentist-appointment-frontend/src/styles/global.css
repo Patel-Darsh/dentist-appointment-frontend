@@ -1,0 +1,13 @@
+/* src/styles/global.css */
+
+body {
+    font-family: Arial, sans-serif; /* Clean font */
+    background-color: #f9f9f9;     /* Light background */
+    margin: 0;                     /* Remove default margins */
+    padding: 0;                    /* Remove default padding */
+  }
+  
+  input, button {
+    outline: none;                 /* Remove default outlines */
+  }
+  

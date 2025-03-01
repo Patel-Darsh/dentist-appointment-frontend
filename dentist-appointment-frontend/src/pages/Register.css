@@ -1,0 +1,317 @@
+/* // src/pages/Register.css */
+@import "tailwindcss";
+
+.register-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3B0066, #6A0DAD); /* Royal Purple gradient */
+  padding: 80px 40px 40px; /* Top padding for logo space */
+  font-family: "Poppins", sans-serif;
+  flex-wrap: nowrap;
+}
+
+/* Logo and Company Name */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Left Side Styling */
+.register-left {
+  width: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.register-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.register-subtext {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-top: 14px;
+  color: #f0f0f0;
+  opacity: 0.9;
+}
+
+/* Right Side (Card) */
+.register-right {
+  width: 45%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 22px;
+  padding: 35px 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.register-title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #ffffff;
+}
+
+.register-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tab.active {
+  background-color: #FF8C00;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tab.inactive {
+  background-color: transparent;
+  color: #FF8C00;
+  border: 1px solid #FF8C00;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* .form-group {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s, background 0.3s;
+  min-width: 0;
+}
+
+.phone-code input {
+  max-width: 70px;
+  text-align: center;
+  color: #ffff;
+}
+
+.contact input {
+  flex: 1.6;
+  max-width: 1000px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.form-group input:focus {
+  border-color: #FF8C00;
+  background: rgba(255, 255, 255, 0.3);
+} */
+
+.form-group {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  /* border: 1px solid #fff; */
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.phone-group {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.country {
+  flex: 1; /* Makes it as wide as First Name */
+}
+
+.phone-code {
+  width: 60px; /* Keeps the country code small */
+}
+
+.contact {
+  flex: 1; /* Takes the remaining space */
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.signin-link {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.signin-link span {
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 10px;
+}
+
+.submit-btn, .google-btn {
+  font-size: 1.1rem;
+  padding: 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn {
+  background-color: #FF8C00;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.submit-btn:hover {
+  background-color: #E76F00;
+  transform: scale(1.08);
+}
+
+.google-btn {
+  background-color: #4285F4;
+  color: #fff;
+}
+
+.google-btn:hover {
+  background-color: #3367D6;
+  transform: scale(1.07);
+}
+
+button {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .register-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px 40px; /* Space for logo */
+  }
+
+  .register-left, .register-right {
+    width: 100%;
+  }
+
+  .register-left {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-left {
+    display: none; /* Hide text section on tablets and smaller */
+  }
+
+  .register-right {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    font-size: 1.2rem;
+  }
+
+  .register-right {
+    padding: 25px 15px;
+  }
+
+  .tab {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  .submit-btn, .google-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
